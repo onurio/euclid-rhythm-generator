@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 2,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 402.0, -857.0, 1240.0, 683.0 ],
+		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -117,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 776.0, 423.399998843669891, 33.0, 22.0 ],
+					"patching_rect" : [ 738.0, 423.399998843669891, 33.0, 22.0 ],
 					"text" : "* 10."
 				}
 
@@ -127,10 +127,10 @@
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "float" ],
-					"patching_rect" : [ 816.0, 423.399998843669891, 157.0, 22.0 ],
-					"text" : "t b b 4."
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "float", "float" ],
+					"patching_rect" : [ 815.0, 416.999997854232788, 189.0, 22.0 ],
+					"text" : "t b b 4. f"
 				}
 
 			}
@@ -322,7 +322,7 @@
 					"presentation_rect" : [ 288.0, -40.333333909511566, 56.0, 83.0 ],
 					"prototypename" : "pitch",
 					"saved_attribute_attributes" : 					{
-						"activedialcolor" : 						{
+						"fgdialcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -330,7 +330,7 @@
 							"expression" : ""
 						}
 ,
-						"activeneedlecolor" : 						{
+						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -338,7 +338,11 @@
 							"expression" : ""
 						}
 ,
-						"fgdialcolor" : 						{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"activedialcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -346,15 +350,11 @@
 							"expression" : ""
 						}
 ,
-						"textcolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
 							"parameter_initial" : [ 60 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "live.dial[22]",
+							"parameter_longname" : "live.dial[18]",
 							"parameter_mmax" : 120.0,
 							"parameter_shortname" : "Pitch",
 							"parameter_type" : 0,
@@ -424,7 +424,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 540.169999225139691, 197.0, 60.0, 22.0 ],
-					"text" : "3. 4."
+					"text" : "1. 4."
 				}
 
 			}
@@ -608,9 +608,9 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 603.399999999999977, 412.399998843669891, 56.0, 22.0 ],
 					"restore" : 					{
-						"live.dial[1]" : [ 36.0 ],
-						"live.grid" : [ 3, 6, 1, 0, 4, 0, 1000, 3000, 4000, 2, 2, 2, 2, 2, 2 ],
-						"live.numbox[1]" : [ 6.0 ]
+						"live.dial[1]" : [ 40.0 ],
+						"live.grid" : [ 3, 8, 1, 0, 4, 0, 2000, 4000, 6000, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.numbox[1]" : [ 8.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -726,7 +726,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "16", "24", "32" ],
-							"parameter_longname" : "live.numbox[5]",
+							"parameter_longname" : "live.numbox[8]",
 							"parameter_shortname" : "live.numbox[1]",
 							"parameter_type" : 0,
 							"parameter_units" : "div",
@@ -985,7 +985,7 @@
 			}
 , 			{
 				"box" : 				{
-					"columns" : 6,
+					"columns" : 8,
 					"direction" : 0,
 					"id" : "obj-57",
 					"ignoreclick" : 1,
@@ -1003,7 +1003,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "live.grid[8]",
+							"parameter_longname" : "live.grid[11]",
 							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3
 						}
@@ -1023,7 +1023,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 223.999989449977875, 740.333351135253906, 29.5, 22.0 ],
-					"text" : "36"
+					"text" : "40"
 				}
 
 			}
@@ -1673,6 +1673,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"source" : [ "obj-52", 3 ]
 				}
 
 			}
